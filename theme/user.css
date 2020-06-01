@@ -1,4 +1,4 @@
-/* All of this taken from base user.css */
+/* This is basically the default Spicetify user.css but with some removal and slight adjustments */
 
 :root {
 	--bar-height: 100px;
@@ -145,7 +145,6 @@
 }
 
 #video-player .album-art__track-details {
-	padding-left: 10px;
 	line-height: initial;
 }
 
@@ -157,7 +156,7 @@
 
 #video-player .album-art__artist-name {
 	font-size: 40px;
-	margin-top: -5px;
+	margin-top: -15px;
 	line-height: initial;
 }
 
@@ -219,7 +218,6 @@
 #now-playing-image-small .cover-image {
     width: calc(var(--bar-height) - 15px);
     height: calc(var(--bar-height) - 15px);
-    margin-top: 5px !important;
     margin-left: 5px !important;
 }
 
