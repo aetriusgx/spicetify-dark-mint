@@ -1,7 +1,13 @@
 /* All of this taken from base user.css */
 
 :root {
-	--bar-height: 80px;
+	--bar-height: 90px;
+}
+
+.profile.content-top-bar__profile-link,
+.upgrade-button,
+.LeftSidebarNewPlaylistButton__button {
+	display: none !important;
 }
 
 .card-image,
@@ -78,6 +84,11 @@
 	overflow: visible !important;
 }
 
+.button.button-green,
+.GlueButton.GlueButton--style-green {
+	color: var(--modspotify_main_bg) !important;
+}
+
 .tl-explicit .label,
 .tl-premium .label,
 .tl-cell:not(.tl-number),
@@ -134,7 +145,7 @@
 }
 
 #video-player .album-art__track-details {
-	padding-left: 50px;
+	padding-left: 40px;
 	line-height: initial;
 }
 
@@ -206,8 +217,10 @@
 }
 
 #now-playing-image-small .cover-image {
-    width: var(--bar-height);
-    height: var(--bar-height);
+    width: calc(var(--bar-height) - 10px);
+    height: calc(var(--bar-height) - 10px);
+    margin-top: 5px !important;
+    margin-left: 10px !important;
 }
 
 .view-player .now-playing .cover-image-link-wrapper {
@@ -226,12 +239,12 @@
 .progress-container .inner {
 	top: 0 !important;
 	margin-top: 0 !important;
-	height: 5px;
+	height: 3px;
 }
 
 .progress-container .progress-bar-wrapper {
 	top: 0 !important;
-	height: 5px;
+	height: 3px;
 }
 
 .progress-container {
