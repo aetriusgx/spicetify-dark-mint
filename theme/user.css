@@ -1,1 +1,87 @@
+/* All of this taken from base user.css */
 
+:root {
+	--bar-height: 100px;
+}
+
+.card-image,
+.card-placeholder-wrapper,
+.card-image-content-wrapper,
+.Card:not(.Card--artist) .Card__image,
+.Card:not(.Card--artist) .Card__image-wrapper {
+	border-radius: 10px !important;
+	overflow: hidden !important
+}
+
+::-webkit-scrollbar-button {
+	display: none !important;
+}
+
+.SearchInput {
+	color: var(--modspotify_main_fg);
+}
+.SearchInput__input {
+	color: var(--modspotify_secondary_fg);
+	background-color: rgba(var(--modspotify_rgb_scrollbar_fg_and_selected_row_bg), 0.5) !important;
+	border-radius: 4px !important;
+	padding-left: 34px;
+}
+
+.sidebar:hover .sidebar-navbar.sidebar-scroll-element {
+	opacity: 1!important;
+}
+
+.view-player .player-controls-container,
+.view-player .player-controls-container .controls {
+	overflow: visible !important;
+}
+
+.view-player .player-controls-container .controls .button-play{
+	height:50px !important;
+	border-radius:50px !important;
+	background: transparent !important;
+	box-shadow:0 0 0 0 !important;
+	width:50px !important;
+	overflow: visible !important;
+	box-shadow: 0 4px 15px rgba(0,0,0,0.2) !important;
+	transition:none 0.3s cubic-bezier(.3,0,.7,1);
+}
+
+.view-player .player-controls-container .controls .button-play:before{
+	font-size:18px !important;
+	padding-left: 16px !important;
+	padding-top: 9px !important;
+}
+
+.view-player .player-controls-container .controls .button-play:after {
+	box-shadow: unset !important;
+}
+
+.view-player .player-controls-container {
+	position: absolute !important;
+	width: 100% !important;
+}
+
+.view-player .player-controls-container .controls {
+	width: 100% !important;
+	height: 100%  !important;
+	align-items: center !important;
+	margin-top : 0px !important;
+}
+
+.gc-image-container,
+.gc-image {
+	border-radius: 10px !important;
+}
+
+.carousel {
+	overflow: visible !important;
+}
+
+.tl-explicit .label,
+.tl-premium .label,
+.tl-cell:not(.tl-number),
+.tl-cell a:link,
+.tl-highlight {
+  color: var(--modspotify_secondary_fg);
+}
