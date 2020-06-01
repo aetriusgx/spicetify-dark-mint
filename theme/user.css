@@ -1,7 +1,7 @@
 /* All of this taken from base user.css */
 
 :root {
-	--bar-height: 90px;
+	--bar-height: 100px;
 }
 
 .profile.content-top-bar__profile-link,
@@ -145,7 +145,7 @@
 }
 
 #video-player .album-art__track-details {
-	padding-left: 40px;
+	padding-left: 10px;
 	line-height: initial;
 }
 
@@ -157,7 +157,7 @@
 
 #video-player .album-art__artist-name {
 	font-size: 40px;
-	margin-top: 0;
+	margin-top: -5px;
 	line-height: initial;
 }
 
@@ -196,7 +196,7 @@
 }
 
 .view-player {
-	height: var(--bar-height) !important;
+	height: calc(var(--bar-height) - 5px) !important;
 	border-top: 0;
 }
 
@@ -213,14 +213,14 @@
 .view-player .now-playing .cover-image-link,
 .view-player .now-playing .cover-image-link figure {
 	width: var(--bar-height);
-	height: var(--bar-height);
+    height: calc(var(--bar-height) - 15px);
 }
 
 #now-playing-image-small .cover-image {
-    width: calc(var(--bar-height) - 10px);
-    height: calc(var(--bar-height) - 10px);
+    width: calc(var(--bar-height) - 15px);
+    height: calc(var(--bar-height) - 15px);
     margin-top: 5px !important;
-    margin-left: 10px !important;
+    margin-left: 5px !important;
 }
 
 .view-player .now-playing .cover-image-link-wrapper {
@@ -239,25 +239,25 @@
 .progress-container .inner {
 	top: 0 !important;
 	margin-top: 0 !important;
-	height: 3px;
+	height: 5px;
 }
 
 .progress-container .progress-bar-wrapper {
 	top: 0 !important;
-	height: 3px;
+	height: 5px;
 }
 
 .progress-container {
 	position: fixed !important;
 	width: 100% !important;
-	bottom: var(--bar-height) !important;
+	bottom: calc(var(--bar-height) - 10px)!important;
 	margin : 0 !important;
 }
 
 .progress-container .inner {
 	border-radius: 0 2px 2px 0 !important;
 	background-color: var(--modspotify_main_fg) !important;
-	box-shadow: 0 2px 2px 0 var(--modspotify_main_fg);
+    box-shadow: 0 2px 2px 0 var(--modspotify_main_fg);
 }
 
 .saber-hilt {
@@ -375,4 +375,9 @@ body.remotebar .view-player .player-bar-wrapper {
 
 .concert-title span {
 	color: var(--modspotify_secondary_fg) !important;
+}
+
+.view-player .player-controls-container .progress-container .elapsed,
+.view-player .player-controls-container .progress-container .remaining {
+	display: none !important;
 }
